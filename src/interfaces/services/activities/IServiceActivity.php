@@ -40,4 +40,11 @@ interface IServiceActivity extends ICanBeDescribed
     public function setParameter($name, $value);
 
     public function getDispatchers();
+
+    /**
+     * @param mixed $context
+     *
+     * @return $this
+     */
+    public function applyDispatchersTo($context);
 }
